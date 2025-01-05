@@ -173,3 +173,5 @@ cython_debug/
 .codegpt
 example/simple/public
 example/simple-docker/public
+
+.codegpt
