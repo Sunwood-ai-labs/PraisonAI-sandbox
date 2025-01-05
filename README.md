@@ -1,6 +1,19 @@
+<div align="center">
+
 ![68a4d117da4ca476344f6d28f88e141a18e870cacbed9b6ed4d91d5b](https://github.com/user-attachments/assets/cde3cf11-4c53-4335-8eda-1e0dc6297dbb)
 
 # PraisonAI-sandbox
+
+[![GitHub license](https://img.shields.io/github/license/Sunwood-ai-labs/PraisonAI-sandbox)](https://github.com/Sunwood-ai-labs/PraisonAI-sandbox/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/Sunwood-ai-labs/PraisonAI-sandbox)](https://github.com/Sunwood-ai-labs/PraisonAI-sandbox/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/Sunwood-ai-labs/PraisonAI-sandbox)](https://github.com/Sunwood-ai-labs/PraisonAI-sandbox/issues)
+
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Docker](https://img.shields.io/badge/Docker-Supported-blue?logo=docker)
+![Chainlit](https://img.shields.io/badge/Chainlit-UI-green?logo=chainlit)
+![PraisonAI](https://img.shields.io/badge/PraisonAI-2.0.18-purple)
+
+</div>
 
 ## プロジェクト概要
 このリポジトリはPraisonAIのサンドボックス環境です。AIエージェントを使用して創造的なコンテンツを生成する実験的な環境として設計されています。
