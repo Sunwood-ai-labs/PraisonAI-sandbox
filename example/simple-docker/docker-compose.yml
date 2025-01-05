@@ -1,0 +1,20 @@
+services:
+  ui:
+    build:
+      context: .
+      dockerfile: Dockerfile.ui
+    volumes:
+      - .:/app
+    ports:
+      - "8082:8082"
+    environment:
+      FLASK_ENV: development
+      CHAINLIT_PORT: "8082"
+      CHAINLIT_HOST: "0.0.0.0"
+      CHAINLIT_AUTH: "false"  # または認証を無効化
+      # OPENAI_API_KEY: ${OPENAI_API_KEY}
+      # CHAINLIT_AUTH_SECRET: sk-5555
+    # command: praisonai ui --host 0.0.0.0
+    tty: true
+    env_file:
+      - .env
