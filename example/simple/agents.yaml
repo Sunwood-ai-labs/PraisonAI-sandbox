@@ -1,0 +1,55 @@
+framework: praisonai
+process: sequential
+topic: Creating a movie script about cats living on Mars
+roles:
+  researcher:
+    backstory: A researcher with expertise in science and animal behavior
+    goal: Collect detailed information about Mars environment and cat ecology
+    role: Researcher
+    min_reflect: 1
+    max_reflect: 2
+    tasks:
+      research_task:
+        description: |
+          - Research Mars environment (atmosphere, temperature, gravity, etc.)
+          - Study cats' physiological characteristics and behavior patterns
+          - Collect existing research data on organisms' survival in space
+        expected_output: Detailed report on Mars environment and cat ecology
+    tools:
+      - search_tool
+      - wikipedia_tool
+
+  story_designer:
+    backstory: Expert in creative storytelling
+    goal: Create a story that combines scientific accuracy with entertainment
+    role: Story Designer
+    tasks:
+      story_development:
+        description: |
+          - Create unique storyline based on research data
+          - Develop character settings for the protagonist cat
+          - Build adventure elements on Mars
+        expected_output: |
+          - Story overview
+          - Character profiles
+          - Plot development
+    tools:
+      - text_generation_tool
+
+  scriptwriter:
+    backstory: Experienced screenwriter with extensive movie script writing experience
+    goal: Create an engaging movie script
+    role: Scriptwriter
+    tasks:
+      script_creation:
+        description: |
+          - Convert story into movie script format
+          - Create effective dialogue
+          - Detailed scene descriptions
+        expected_output: Completed movie script (including scenes, dialogue, and stage directions)
+    tools:
+      - writing_assistant_tool
+
+dependencies:
+  - story_designer: [researcher]  # Story creation depends on research results
+  - scriptwriter: [story_designer]  # Script writing depends on story design
